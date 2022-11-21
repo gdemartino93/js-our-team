@@ -37,6 +37,8 @@ for ( let i = 0 ; i < team.length ; i++){
 
     let box = document.createElement("div");
     box.classList.add("box");
+    box.classList.add("animate__animated")
+    box.classList.add("animate__zoomIn")
     
     CONTAINER.append(box);
 
@@ -51,11 +53,5 @@ for ( let i = 0 ; i < team.length ; i++){
     let objectX = team[i];
     boxImg.innerHTML += `<img src="${objectX.foto}" alt="">`;
     boxTxt.innerHTML +=`<span class="info-nome">${objectX.nome} ${objectX.cognome}</span>
-    <span class="info-ruolo">${objectX.ruolo}</span>`
-    
-     
+    <span class="info-ruolo">${objectX.ruolo}</span>`  
 }   
-for (let key in team){
-        // console.log(team);
-}
-

@@ -50,8 +50,18 @@ header p{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin: 50px auto 100px auto;
+    margin-bottom: 100px;
 }
 footer{
     background-color: aquamarine;
+}
+.box:hover{
+    box-shadow: 200px red;
+}
+.box:hover{
+    filter: sepia(50%);
+    cursor: pointer;
+}
+.box:hover .boxTxt{
+    font-weight: bold;
 }
