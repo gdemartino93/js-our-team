@@ -3,25 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: beige;
+}
 .box{
-    width: calc(100% / 3 - 20px);
-    height: 300px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box img{
+    width: 100%;
+    height: auto;
+}
+.boxImg{} 
+.boxImg{
+    max-height: 400px;
+    width: 320px;
 }
 header{
-    height: 10vh;
-    background: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header p{
+    width: 700px;
+    text-align: center;
 }
 #home{
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    background-color: bisque;
-    gap: 20px;
 }
 footer{
-    height: 10vh;
     background-color: aquamarine;
 }
