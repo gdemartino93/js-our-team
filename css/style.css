@@ -7,20 +7,33 @@ body{
     background: beige;
 }
 .box{
+    width: calc(100% / 3 - 40px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: white;
+    border-radius: 20px;
 }
 .box img{
     width: 100%;
     height: auto;
+    border-radius: 20px 20px 0 0;
 }
-.boxImg{} 
-.boxImg{
-    max-height: 400px;
-    width: 320px;
+.boxTxt{
+    display: flex;
+    flex-direction: column;
+    min-height: 70px;
+    justify-content: center;
+    text-align: center;
 }
+.info-nome{
+    font-size: 1.3rem;
+}
+.info-ruolo{
+    font-size: 0.9rem;
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -36,6 +49,8 @@ header p{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+    margin: 50px auto 100px auto;
 }
 footer{
     background-color: aquamarine;
